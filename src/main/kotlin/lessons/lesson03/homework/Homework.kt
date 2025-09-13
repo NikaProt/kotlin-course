@@ -1,7 +1,7 @@
 package lessons.lesson03.homework
 
 //Название мероприятия (неизменяемая публичная переменная известная на момент написания)
-    val name: String = "Monster Hackaton"
+    val name1: String = "Monster Hackaton"
 
 //Дата проведения (публичная переменная известная на момент написания, но может быть изменена из-за переноса)
     var date: String = "10 ноября 2025"
