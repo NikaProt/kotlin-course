@@ -89,13 +89,13 @@ val bugState: Boolean = true
 val kettle: Int = 10
 
 //Хранить количество нажатий котом на клавиатуру ноутбука за всё время твоей работы.
-val catPresses: Long = 7369279472L
+val catPresses: Int = 7369279472
 
 //Хранить количество попыток пересчитать звёзды на небе за всю историю человечества.
 val starCounting: Long = 274274729797979L
 
 //Хранить массу воздуха в спускающем матрасе после нападения кота в долях грамма.
-val airWeight: Double = 0.000001
+val airWeight: Float = 0.000001f
 
 //Хранить словарь «название стартапа → сумму потерь инвесторов».
 val dictonaryStartap: Map<String, Int> = mapOf("Startup_1" to 10000000, "Startup_02" to 12000000)
