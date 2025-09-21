@@ -1,7 +1,5 @@
 package lessons.lesson04.homework
 
-package lessons.lesson040.homework
-
 val v1: Int = 42
 val v2: Long = 98765432123456789L
 val v3: Float = 23.45f
@@ -89,7 +87,7 @@ val bugState: Boolean = true
 val kettle: Int = 10
 
 //Хранить количество нажатий котом на клавиатуру ноутбука за всё время твоей работы.
-val catPresses: Int = 7369279472
+val catPresses: Int = 7369
 
 //Хранить количество попыток пересчитать звёзды на небе за всю историю человечества.
 val starCounting: Long = 274274729797979L
