@@ -8,6 +8,7 @@ fun main() {
     move(2.5)
     bonus(2000)
     document("jpg")
+    tempConversion(17.3, 'C')
     cloth(15)
     movie(17)
 
