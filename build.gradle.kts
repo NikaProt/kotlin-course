@@ -1,8 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    java
-    kotlin("jvm") version "1.9.20"
+    kotlin("jvm") version "1.6.10"
 }
 
 group = "com.stimmax"
@@ -12,16 +11,14 @@ repositories {
     mavenCentral()
 }
 
-java {
-    sourceCompatibility = JavaVersion.VERSION_21
-    targetCompatibility = JavaVersion.VERSION_21
-}
-
 dependencies {
-    testImplementation(kotlin("test-junit"))
-    implementation(kotlin("stdlib"))
+    testImplementation(kotlin("test"))
 }
 
 tasks.test {
-    useJUnitPlatform()
+    useJUnit()
+}
+
+tasks.withType<KotlinCompile>() {
+    kotlinOptions.jvmTarget = "1.8"
 }

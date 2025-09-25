@@ -76,11 +76,11 @@ fun document (type: String) {
 fun tempConversion (temperature: Double, type: Char){
     if (type == 'C' || type == 'c'){
         val convertToF = temperature * 9/5 + 32
-        //print(convertToF) - IDEA выдает ошибку, поэтому использую println()
+        print(convertToF) //- IDEA выдает ошибку, поэтому использую println()
         println("$convertToF + F")
     } else if (type == 'F' || type == 'f') {
         val convertToC = (temperature - 32) * 5 / 9
-        //print(convertToC) - IDEA выдает ошибку, поэтому использую println()
+        print(convertToC) //- IDEA выдает ошибку, поэтому использую println()
         println("$convertToC + C")
     } else {
         "Неверная единица измерения"
