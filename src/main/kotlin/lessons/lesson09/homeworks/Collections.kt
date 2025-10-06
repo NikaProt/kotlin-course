@@ -144,8 +144,46 @@ fun main() {
     println(list11_2)
 
 
+//    3. Работа с Множествами Set
+//    3.1. Создайте пустое неизменяемое множество целых чисел.
+    val set1: Set<Int> = emptySet()
+
+//    3.2. Создайте неизменяемое множество целых чисел, содержащее три различных элемента (например, 1, 2, 3).
+    val set2: Set<Int> = setOf(2, 3, 4)
+
+//    3.3. Создайте изменяемое множество строк и инициализируйте его несколькими значениями (например, "Kotlin", "Java", "Scala").
+    val set3: MutableSet<String> = mutableSetOf("Kotlin", "Java", "Scala")
+
+//    3.4. Имея изменяемое множество строк, добавьте в него новые элементы (например, "Swift", "Go").
+    val set4: MutableSet<String> = mutableSetOf("Kotlin", "Java", "Scala")
+    set4.add("Swift")
+    set4.add("Go")
+    println(set4)
+
+//    3.5. Имея изменяемое множество целых чисел, удалите из него определенный элемент (например, 2).
+    val set5: MutableSet<Int> = mutableSetOf(1, 2, 3, 4, 5)
+    set5.remove(2)
+    println(set5)
+
+//    3.6. Создайте множество целых чисел и используйте цикл для вывода каждого элемента на экран.
+    val set6: Set<Int> = setOf(3, 2, 3, 4, 5)
+    for (i in set6) {
+        println(i)
+    }
+
+//    3.8. Создайте множество строк и конвертируйте его в изменяемый список строк с использованием цикла.
+    val set8_1: Set<String> = setOf("c1", "c2", "c3", "c4")
+    val list8_2: MutableList<String> = mutableListOf()
+    for (i in set8_1) {
+        list8_2.add(i)
+    }
+    println(list8_2)
+
+
+
 
     arrayString (arrayOf("a1", "a2", "a3"), "2")
+    println(setString(setOf("d1", "d2", "d3"), "d4"))
 }
 
 // 1.10. Создай функцию, которая принимает массив строк и строку для поиска. Функция должна находить в массиве элемент, в котором принятая строка является подстрокой (метод contains()). Распечатай найденный элемент.
@@ -155,4 +193,14 @@ fun arrayString (array10: Array<String>, arg: String) {
             println(i)
         }
     }
+}
+
+//    3.7. Создай функцию, которая принимает множество строк (set) и строку и проверяет, есть ли в множестве указанная строка. Нужно вернуть булево значение true если строка есть. Реши задачу через цикл.
+fun setString (set7: Set<String>, arg: String): Boolean {
+    for (i in set7) {
+        if (i == arg) {
+            return true
+        }
+    }
+    return false
 }
